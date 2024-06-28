@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delft</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        header {
+            background-image: url('Afbeeldingen/Delft.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .left, .right {
+            box-sizing: border-box;
+        }
+        .left {
+            flex: 1 1 100%;
+        }
+        .right {
+            flex: 1 1 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .fact-list {
+            padding: 0;
+            list-style: none;
+        }
+        .fact-list li {
+            margin: 5px 0;
+        }
+        .article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .article img {
+            margin-left: 10px;
+            max-width: 100px;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .left {
+                flex: 0 0 100%;
+            }
+            .right {
+                flex: 0 0 100%;
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            .left {
+                flex: 0 0 33.3333%;
+                padding-right: 10px;
+            }
+            .right {
+                flex: 0 0 66.6667%;
+                padding-left: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .left {
+                flex: 0 0 25%;
+            }
+            .right {
+                flex: 0 0 75%;
+            }
+        }
+
+        @media only screen and (min-width: 1200px) {
+            .left {
+                flex: 0 0 20%;
+            }
+            .right {
+                flex: 0 0 80%;
+            }
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Delft</h1>
+    </header>
+<main>
+    <div class="left">
+        <ul class="fact-list">
+            <li><strong>Historische stad:</strong> Delft is beroemd om zijn historische stadscentrum met grachten, monumentale gebouwen en kerken zoals de Oude Kerk en de Nieuwe Kerk.</li>
+            <li><strong>Delfts Blauw:</strong> De stad is wereldberoemd om zijn Delfts Blauw aardewerk, een soort tin-glazuuraardewerk dat sinds de 17e eeuw wordt gemaakt.</li>
+            <li><strong>Technische Universiteit Delft (TU Delft):</strong> Delft herbergt een van de beste technische universiteiten ter wereld, de TU Delft, die bekend staat om zijn innovatie en onderzoek.</li>
+            <li><strong>Vermeer:</strong> De beroemde schilder Johannes Vermeer, bekend om werken zoals "Het Melkmeisje" en "Meisje met de parel", werd in Delft geboren en bracht er zijn hele leven door.</li>
+            <li><strong>Koninklijke Grafkelder:</strong> In de Nieuwe Kerk bevinden zich de koninklijke grafkelders waar leden van het Nederlandse koninklijk huis, de Oranjes, sinds de 16e eeuw worden bijgezet.</li>
+        </ul>
+    </div>
+    <div class="right">
+         <div class="article">
+            <p>Het Blauwe Hart is een prachtige toeristische attractie in Delft. Het staat bekend om zijn schoonheid en historische waarde.</p>
+            <img src="Afbeeldingen/Blauwe Hart.jpg" alt="Blauwe Hart">
+    </div>
+    <div class="article">
+                <p>Een ander belangrijk aspect van het Blauwe Hart is de unieke architectuur en de serene omgeving.</p>
+                <img src="Afbeeldingen/Blauwe Hart2.jpg" alt="Blauwe Hart">
+    </div>
+    </div>
+    </main>
+    <footer>
+        &copy; 2024 Delft
+    </footer>
+</body>
+</html>
